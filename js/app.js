@@ -4,7 +4,7 @@ function sumar() {
     const operandoB = forma["operandoB"];
     let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
     if(isNaN(resultado))
-        resultado = "La operación no incluye números";
+        resultado = "You need to put numbers";
     document.getElementById("resultado").innerHTML = `${resultado}`;
     console.log(`${resultado}`);
 }
@@ -15,7 +15,7 @@ function restar() {
     const operandoB = forma["operandoB"];
     let resultado = parseInt(operandoA.value) - parseInt(operandoB.value);
     if(isNaN(resultado))
-        resultado = "La operación no incluye números";
+        resultado = "You need to put numbers";
     document.getElementById("resultado").innerHTML = `${resultado}`;
     console.log(`${resultado}`);
 }
@@ -26,7 +26,7 @@ function multiplicar() {
     const operandoB = forma["operandoB"];
     let resultado = parseInt(operandoA.value) * parseInt(operandoB.value);
     if(isNaN(resultado))
-        resultado = "La operación no incluye números";
+        resultado = "You need to put numbers";
     document.getElementById("resultado").innerHTML = `${resultado}`;
     console.log(`${resultado}`);
 }
@@ -37,9 +37,9 @@ function dividir() {
     const operandoB = forma["operandoB"];
     let resultado = parseInt(operandoA.value) / parseInt(operandoB.value);
     if(isNaN(resultado))
-        resultado = "La operación no incluye números";
+        resultado = "You need to put numbers";
     if(operandoB.value == 0)
-        resultado = "La división por 0 no es posible";
+        resultado = "Division by zero is not possible";
     document.getElementById("resultado").innerHTML = `${resultado}`;
     console.log(`${resultado}`);
 }
