@@ -5,8 +5,8 @@ function sumar() {
     let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "La operación no incluye números";
-    document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
-    console.log(`Resultado: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `${resultado}`;
+    console.log(`${resultado}`);
 }
 
 function restar() {
@@ -16,8 +16,8 @@ function restar() {
     let resultado = parseInt(operandoA.value) - parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "La operación no incluye números";
-    document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
-    console.log(`Resultado: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `${resultado}`;
+    console.log(`${resultado}`);
 }
 
 function multiplicar() {
@@ -27,8 +27,8 @@ function multiplicar() {
     let resultado = parseInt(operandoA.value) * parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "La operación no incluye números";
-    document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
-    console.log(`Resultado: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `${resultado}`;
+    console.log(`${resultado}`);
 }
 
 function dividir() {
@@ -40,6 +40,6 @@ function dividir() {
         resultado = "La operación no incluye números";
     if(operandoB.value == 0)
         resultado = "La división por 0 no es posible";
-    document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
-    console.log(`Resultado: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `${resultado}`;
+    console.log(`${resultado}`);
 }
