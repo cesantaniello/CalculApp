@@ -4,40 +4,35 @@ function operacion(){
     const operandoB = forma["operandoB"];
 }
 
+function solucion(resultado) {       
+    if(isNaN(resultado))
+        resultado = "You need to put numbers";
+    if(!isFinite(resultado))
+        resultado = "Divion by zero is not allowed";
+    document.getElementById("resultado").innerHTML = `${resultado}`;
+    console.log(`${resultado}`);
+}
+
 function sumar() {
     operacion();
     let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
-    if(isNaN(resultado))
-        resultado = "You need to put numbers";
-    document.getElementById("resultado").innerHTML = `${resultado}`;
-    console.log(`${resultado}`);
+    solucion(resultado);
 }
 
 function restar() {
     operacion();
     let resultado = parseInt(operandoA.value) - parseInt(operandoB.value);
-    if(isNaN(resultado))
-        resultado = "You need to put numbers";
-    document.getElementById("resultado").innerHTML = `${resultado}`;
-    console.log(`${resultado}`);
+    solucion(resultado);
 }
 
 function multiplicar() {
     operacion();
     let resultado = parseInt(operandoA.value) * parseInt(operandoB.value);
-    if(isNaN(resultado))
-        resultado = "You need to put numbers";
-    document.getElementById("resultado").innerHTML = `${resultado}`;
-    console.log(`${resultado}`);
+    solucion(resultado);
 }
 
 function dividir() {
     operacion();
     let resultado = parseInt(operandoA.value) / parseInt(operandoB.value);
-    if(isNaN(resultado))
-        resultado = "You need to put numbers";
-    if(operandoB.value == 0)
-        resultado = "Division by zero is not possible";
-    document.getElementById("resultado").innerHTML = `${resultado}`;
-    console.log(`${resultado}`);
+    solucion(resultado);
 }
