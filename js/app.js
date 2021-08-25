@@ -1,7 +1,11 @@
-function sumar() {
+function operacion(){
     const forma = document.getElementById("forma");
     const operandoA = forma["operandoA"];
     const operandoB = forma["operandoB"];
+}
+
+function sumar() {
+    operacion();
     let resultado = parseInt(operandoA.value) + parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "You need to put numbers";
@@ -10,9 +14,7 @@ function sumar() {
 }
 
 function restar() {
-    const forma = document.getElementById("forma");
-    const operandoA = forma["operandoA"];
-    const operandoB = forma["operandoB"];
+    operacion();
     let resultado = parseInt(operandoA.value) - parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "You need to put numbers";
@@ -21,9 +23,7 @@ function restar() {
 }
 
 function multiplicar() {
-    const forma = document.getElementById("forma");
-    const operandoA = forma["operandoA"];
-    const operandoB = forma["operandoB"];
+    operacion();
     let resultado = parseInt(operandoA.value) * parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "You need to put numbers";
@@ -32,9 +32,7 @@ function multiplicar() {
 }
 
 function dividir() {
-    const forma = document.getElementById("forma");
-    const operandoA = forma["operandoA"];
-    const operandoB = forma["operandoB"];
+    operacion();
     let resultado = parseInt(operandoA.value) / parseInt(operandoB.value);
     if(isNaN(resultado))
         resultado = "You need to put numbers";
